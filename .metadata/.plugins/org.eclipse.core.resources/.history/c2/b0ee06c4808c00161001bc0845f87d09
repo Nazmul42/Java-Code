@@ -1,0 +1,28 @@
+
+public class PrimeNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          
+		
+		
+		int  no=7, numofFactors=0;
+		for(int i=1; i<=no; i++){
+			double result = (double)no/i;
+			
+			
+			if(result==Math.ceil(result)){
+				numofFactors++;
+			}
+		}
+			if(numofFactors==2){
+				System.out.println("Prime Number");
+			}
+			else{
+				System.out.println("Nope");
+			}
+			
+		
+	}
+
+}

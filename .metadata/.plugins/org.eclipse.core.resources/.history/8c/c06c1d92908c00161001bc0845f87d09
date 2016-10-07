@@ -1,0 +1,27 @@
+import java.io.*;
+
+public class ReverseNumber {
+
+	public static void main(String[] args)throws Exception {
+		BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter the Number : ");
+        int no=Integer.parseInt(reader.readLine());
+        /*StringBuffer b=new StringBuffer(no+"");
+        b.reverse();
+        System.out.println(b); Another Way*/
+        
+        int sum=0;//Another 2 way
+        int temp=no;
+        while(temp!=0){
+        	int digit=temp%10;//Another 2 way
+        	System.out.print(digit);//Another 2 way
+        	//System.out.print(temp%10);
+        	sum=sum+digit;
+        	temp=temp/10;
+        }
+       // System.out.println();
+        System.out.println("/n"+ sum);
+
+	}
+
+}
